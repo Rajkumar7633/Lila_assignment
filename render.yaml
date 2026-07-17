@@ -1,0 +1,20 @@
+# Render Blueprint — backend API (Docker)
+# Docs: https://render.com/docs/blueprint-spec
+
+services:
+  - type: web
+    name: lila-player-viz-api
+    runtime: docker
+    dockerfilePath: ./backend/Dockerfile
+    dockerContext: .
+    plan: free
+    healthCheckPath: /health
+    envVars:
+      - key: DATA_PATH
+        value: /data/player_data
+      - key: MINIMAP_PATH
+        value: /data/player_data/minimaps
+      - key: ALLOWED_ORIGINS
+        value: "*"
+      # After Vercel deploy, update to your frontend URL:
+      # ALLOWED_ORIGINS=https://your-app.vercel.app
