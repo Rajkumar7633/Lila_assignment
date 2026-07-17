@@ -6,10 +6,10 @@ A web tool for Level Designers to explore production telemetry from **LILA BLACK
 
 | Service  | URL |
 |----------|-----|
-| Frontend | `https://YOUR-APP.vercel.app` *(replace after deploy)* |
-| Backend  | `https://lila-player-viz-api.onrender.com` *(replace with your Render URL)* |
+| Frontend | `https://lila-player-viz.vercel.app` *(replace after Vercel deploy)* |
+| Backend  | `https://lila-player-viz-api.onrender.com` |
 
-> Deploy using the steps below, then paste your URLs here before submission.
+> Frontend: deploy to Vercel (steps below), then update this URL.
 
 ## Tech Stack
 
